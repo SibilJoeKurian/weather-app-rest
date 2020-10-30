@@ -1,7 +1,7 @@
 const express=require('express')
 const temperature=require('./address')
 const app=express();
-const port=3000;
+const port=process.env.PORT||3000;
 
 //to handle json data in post request
 app.use(express.json())
